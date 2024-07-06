@@ -7,7 +7,7 @@ export function App() {
   return(
     <>
       <NavBar/>
-      <ItemListContainer greeting="Hola" />
+      <ItemListContainer greeting="Bienvenidos a nuestra página" />
     </>  
   )
 }

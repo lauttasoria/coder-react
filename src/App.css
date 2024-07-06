@@ -1,4 +1,8 @@
 nav{
   display: flex;
   background-color: blueviolet;
+  color: rgb(255, 255, 255);
+}
+body{
+  background-color: rgb(192, 192, 192);
 }
