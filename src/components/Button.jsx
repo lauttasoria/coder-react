@@ -1,9 +1,10 @@
 import React from 'react'
 import './Button.css'
 
-export const Button = ({texto, color}) => {
-    console.log(texto, color)
-    return(
-        <button className={color}> {texto} </button>
+export const Button = (props) => {
+
+
+    return (
+        <button style={{backgroundColor: props.color}} onClick={props.funcion} > {props.children}</button>
     )
 }
