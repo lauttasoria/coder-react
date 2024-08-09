@@ -28,7 +28,7 @@ const ItemListContainer = ({greeting}) => {
 
   if(cargando){
     return (
-      <h3>cargando...</h3>
+      <h3>cargando..</h3>
     )
   }
   

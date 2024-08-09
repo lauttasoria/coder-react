@@ -16,10 +16,10 @@ export function App() {
     <BrowserRouter>
       <NavBar/>
       <Routes>
-        <Route path='/' element={ <ItemListContainer greeting="hola" />}/>
+        <Route path='/' element={<ItemListContainer greeting="hola" />}/>
         <Route path='/categoria/:categoria' element={ <ItemListContainer greeting="hola" />}/>
         <Route path='/detalle/:id' element={<ItemDetailContainer/>} />
-        <Route path='*' element={<h1>Ey! te perdiste, volve al inicio y compra!</h1>} /> 
+        <Route path='*' element={<h1>Ups! Por aca no era</h1>} /> 
       </Routes>
 
     </BrowserRouter>

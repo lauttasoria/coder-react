@@ -6,13 +6,13 @@ const NavBar = () => {
   return (
     <nav>
         <Link to="/">
-        <h2>Mi tienda online</h2>
+        <h2>Tienda de bebidas</h2>
         </Link>
         <CartWidget/>
 
-        <Link to='/categoria/mate' >mate </Link>
-        <Link to='/categoria/tec'> Tecnología </Link>
-        <Link to='/categoria/calzado' >Calzado </Link>
+        <Link to='/categoria/Licores' >Licores</Link>
+        <Link to='/categoria/Cerveza'> Cerveza</Link>
+        <Link to='/categoria/Gin'>Gin</Link>
     </nav>
   )
 }
