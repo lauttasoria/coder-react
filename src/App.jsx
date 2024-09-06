@@ -1,30 +1,38 @@
 import './App.css'
-import { Button } from './components/Button'
-import { ItemCount } from './components/ItemCount/ItemCount'
 import ItemListContainer from './components/ItemListContainer'
+import {ItemDetailContainer} from './components/ItemDetailContainer'
 import NavBar from './components/NavBar'
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
-
-import PostsContainer from './components/PostsContainer'
-import ItemDetailContainer from './components/ItemDetailContainer'
+import Cart from './components/Cart'
+import { CartContextProvider } from './context/CartContext'
+import { useContext } from 'react'
+import { ThemeContext } from './context/ThemeContext'
+import Checkout from './components/Checkout'
 
 export function App() {
 
+  const {darkTheme} = useContext(ThemeContext)
+
   return (
     <>
+    <CartContextProvider>
+   
+    <div className={darkTheme ? "dark" : "light" }>
 
     <BrowserRouter>
       <NavBar/>
       <Routes>
-        <Route path='/' element={<ItemListContainer greeting="hola" />}/>
+        <Route path='/' element={ <ItemListContainer greeting="hola" />}/>
         <Route path='/categoria/:categoria' element={ <ItemListContainer greeting="hola" />}/>
         <Route path='/detalle/:id' element={<ItemDetailContainer/>} />
-        <Route path='*' element={<h1>Ups! Por aca no era</h1>} /> 
+        <Route path='/cart' element={<Cart/>} /> 
+        <Route path='/checkout' element={<Checkout/>}/>
+        <Route path='*' element={<h1>Ups! Te perdiste, volve al inicio.</h1>} /> 
       </Routes>
 
     </BrowserRouter>
-
-
+    </div>
+    </CartContextProvider>
     </>
   )
 }
