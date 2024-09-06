@@ -57,10 +57,7 @@ const ItemListContainer = ({ greeting }) => {
 
   return (
     <div className='flex p-10 gap-2 justify-center'>
-      <div class="absolute inset-0 bottom-10 bg-bottom bg-no-repeat bg-slate-50 dark:bg-[#0B1120] index_beams__yWcJT">
-        <div class="absolute inset-0 bg-grid-slate-900/[0.04] bg-[bottom_1px_center] dark:bg-grid-slate-400/[0.05] dark:bg-bottom dark:border-b dark:border-slate-100/5" style="mask-image:linear-gradient(to bottom, transparent, black);-webkit-mask-image:linear-gradient(to bottom, transparent, black)">
-        </div>
-        </div>
+      
       <ItemList items={items} />
     </div>
   )

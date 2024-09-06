@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react'
 // import Button from 'react-bootstrap/Button';
-import './itemCount.css'
+import './ItemCount.css'
 import { Button } from '../Button'
 import { ItemList } from '../ItemList'
 
