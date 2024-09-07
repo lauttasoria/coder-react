@@ -15,16 +15,14 @@ export const Item = ({producto}) => {
 
   return (
     <div className={cardCN}>
-        <h3 className='texl-2lg font-bold text-sky-500 uppercase '>{producto.nombre}</h3>
-        <p>{producto.precio}</p>
-        <p>{producto.categoria}</p>
+        <h3 className='texl-2lg font-bold uppercase '>{producto.nombre}</h3>
+        <p className='text-black'>{producto.precio}</p>
+        <p className='text-black'>{producto.categoria}</p>
         <img src={producto.image} alt="" />
         <Button color="black" funcion={mostrarDetalles}> 
           <Link to={`/detalle/${producto.id}`}>Ver Mas </Link> 
         </Button>
-        {
-          isVisible ? <ItemDetailContainer id={producto.id} /> : <p>Haz clic para ver mas informacion </p>
-        }
+        
     </div>
   )
 }

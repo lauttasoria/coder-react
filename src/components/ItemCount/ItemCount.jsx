@@ -21,7 +21,7 @@ const sumar  = ()=> {
     <div className='container'>
         <Button variant='primary' funcion={restar} >  -   </Button> 
         <p>{count}</p>
-        <Button color="green" funcion={sumar} >
+        <Button funcion={sumar} >
           +
         </Button>
         <button onClick={()=>handleAddToCart(count)}> Agregar Al Carrito </button>

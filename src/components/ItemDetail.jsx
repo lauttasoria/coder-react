@@ -39,3 +39,4 @@ const ItemDetail = ({prod}) => {
 }
 
 export default ItemDetail
+

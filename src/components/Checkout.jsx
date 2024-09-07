@@ -31,11 +31,11 @@ console.log(order)
     <div>
         <form className='flex flex-col' onSubmit={(e)=>handleSubmit(e)}>
             <span>Nombre</span>
-            <input type="text" className='border border-black' onChange={(e) => setNombre(e.target.value)}/>
+            <input type="text" className='border border-black mx-3 text-black' onChange={(e) => setNombre(e.target.value)}/>
             <span>Mail</span>
-            <input type="email" className='border border-black'onChange={(e) => setMail(e.target.value)}/>
+            <input type="email" className='border border-black mx-3 text-black'onChange={(e) => setMail(e.target.value)}/>
             <span>Direccion</span>
-            <input type="text" className='border border-black'onChange={(e) => setDireccion(e.target.value)}/>
+            <input type="text" className='border border-black mx-3 text-black'onChange={(e) => setDireccion(e.target.value)}/>
             <button type='submit'>Confirmar</button>
         </form>
     </div>
